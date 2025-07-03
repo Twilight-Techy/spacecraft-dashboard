@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Spacecraft Dashboard',
   description: 'A futurististic dashboard for spacecraft telemetry and control.',
   creator: 'Twilight Techy',
+  icons: {
+    icon: '/starship.png',
+  },
 }
 
 export default function RootLayout({
@@ -14,9 +17,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/starship.png" type="image/png" />
-      </head>
       <body>{children}</body>
     </html>
   )
